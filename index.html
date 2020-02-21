@@ -1,7 +1,9 @@
 <!doctype HTML>
 <html>
-<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.5/aframe/build/aframe-ar.js"></script>
+<head>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.5/aframe/build/aframe-ar.js"></script>
+</head>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
       <a-assets>
@@ -9,17 +11,16 @@
       </a-assets>
       <a-entity camera></a-entity>
       <a-marker preset="hiro">
-          <a-entity gltf-model="#rose" rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 10000" position="-1.5 0 0"></a-entity>
-          <a-entity
-            text="value: Happy Birthday;
-            width: 10;
-            height: 10;
-            color: #ff8800;"
-            rotation="-90 0 0"
-            position="4 0 0">
-          </a-entity>
+          <script>
+            var parameters = location.search.substring(1).split("&");
+            var temp = parameters[0].split("=");
+            l = unescape(temp[1]);
+            temp = parameters[1].split("=");
+            p = unescape(temp[1]);
+            document.write("<a-entity gltf-model='#rose' rotation='0 0 0' animation='property: rotation; to: 0 0 360; loop: true; dur: 10000' position='-1.5 0 0'></a-entity>");
+            document.write("<a-entity text='value: "+l+"; width: 10; height: 10; color: #ff8800;' rotation='-90 0 0' position='4 0 0'></a-entity>");
+          </script>
       </a-marker>
-
     </a-scene>
   </body>
 </html>
