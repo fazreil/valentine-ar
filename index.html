@@ -12,16 +12,9 @@
       </a-assets>
       <a-entity camera></a-entity>
       <a-marker type='pattern' url='pattern-hpbd.patt'>
-          <script>
-            var parameters = location.search.substring(1).split("&");
-            var temp = parameters[0].split("=");
-            wish = unescape(temp[1]);
-            temp = parameters[1].split("=");
-            icon = unescape(temp[1]);
-            document.write("<a-entity gltf-model='#cake' rotation='0 0 0' animation='property: rotation; to: 0 0 360; loop: true; dur: 10000' position='-1.75 0 0' scale='0.5 0.5 0.5'></a-entity>");
-            document.write("<a-entity text='value: Happy Birthday from both of us. We both doakan agar kakak panjang umur, murah rezeki dan di bawah perlindungan-Nya; width: 6; height: 10; color: #ff8800;' rotation='-90 0 0' position='3 0 0'></a-entity>");
-            document.write("<a-entity text='value: xoxo,\nFazreil and Farah Zahiah; width: 6; height: 10; color: #ff8800;' rotation='-90 0 0' position='3 0 1'></a-entity>");
-          </script>
+            <a-entity gltf-model='#cake' rotation='0 0 0' animation='property: rotation; to: 0 0 360; loop: true; dur: 10000' position='-1.50 0 0' scale='0.5 0.5 0.5'></a-entity>
+            <a-entity text='value: Happy Birthday from both of us. We both doakan agar kakak panjang umur, murah rezeki dan sentiasa di bawah perlindungan-Nya; width: 6; height: 10; color: #4444ff;' rotation='-90 0 0' position='3 0 0'></a-entity>
+            <a-entity text='value: xoxo,\nFazreil and Farah Zahiah; width: 6; height: 10; color: #4444ff;' rotation='-90 0 0' position='3 0 1'></a-entity>
       </a-marker>
     </a-scene>
   </body>
