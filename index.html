@@ -6,14 +6,17 @@
     <a-scene embedded arjs>
       <a-assets>
         <a-asset-item id="rose" src="rose.gltf"></a-asset-item>
-        <a-asset-item id="message" src="message.gltf"></a-asset-item>
+        <a-asset-item id="rose2" src="valentine2021.gltf"></a-asset-item>
       </a-assets>
       <a-entity camera></a-entity>
       <a-marker preset="hiro">
+        <!--
           <a-entity gltf-model="#rose" rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 10000" position="-1.5 0 0"></a-entity>
-          <a-entity gltf-model="#message" position="2 0 0" material="color: #d4af37"><a-entity>
+        -->
+          <a-entity gltf-model="#rose2" rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 10000" position="-1.5 0 0" scale='0.05 0.05 0.05'></a-entity>
+          <a-entity text='value: Happy Valentines Day to my dear Farah Zahiah. \nI love you so much ; width: 5; height: 10; color: #4444ff;' rotation='-90 0 0' position='3 0 0'></a-entity>
+          <a-entity text='value: xoxo,\nFazreil; width: 6; height: 10; color: #4444ff;' rotation='-90 0 0' position='3 0 1'></a-entity>
       </a-marker>
-
     </a-scene>
   </body>
 </html>
