@@ -1,2 +1,4 @@
 FROM httpd:2.4
-COPY ./ /usr/local/apache2/htdocs/
+COPY ./index.html /usr/local/apache2/htdocs/
+COPY ./cake.gltf /usr/local/apache2/htdocs/
+COPY ./birthday22022022.webm /usr/local/apache2/htdocs/
