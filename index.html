@@ -8,37 +8,16 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
       <a-assets>
-        <a-asset-item id="rose" src="rose.gltf"></a-asset-item>
         <a-asset-item id="cake" src="cake.gltf"></a-asset-item>
-        <video id="movie" loop="true" autoplay src="MOVIE.webm" id="movieVid" webkit-playsinline playsinline></video>
+        <video id="birthday22022022" loop="true" autoplay src="birthday22022022.webm" id="birthday22022022" webkit-playsinline playsinline></video>
         <script>
-          document.getElementById('movieVid').play();
-        </script>
-        <video id="wish" loop="true" autoplay src="wish.webm" id="wishVid" webkit-playsinline playsinline></video>
-        <script>
-          document.getElementById('wishVid').play();
+          document.getElementById('birthday22022022').play();
         </script>
 
       </a-assets>
-<!--      <a-entity camera></a-entity> -->
       <a-marker preset="hiro">
-          <script>
-            // var parameters = location.search.substring(1).split("&");
-            // var temp = parameters[0].split("=");
-            // l = unescape(temp[1]);
-            // temp = parameters[1].split("=");
-            // p = unescape(temp[1]);
-//            document.write("<a-entity gltf-model='#"+p+"' rotation='0 0 0' animation='property: rotation; to: 0 0 360; loop: true; dur: 10000' position='-1.5 0 -2'></a-entity>");
-//            document.write("<a-entity text='value: "+l+"; width: 10; height: 10; color: #ff8800;' rotation='-90 0 0' position='4 0 -2'></a-entity>");
-          </script>
-          <!--
-          <a-entity gltf-model="#cake" rotation='0.0.0' animation='property: rotation; to: 0 0 360; loop: true; dur: 1000' position='-1.5 0 -2'></a-entity>
-          -->
-          <a-entity text='value: Happy Birthday Dear\nFarah Zahiah!; width: 5; height: 5; color: #ff8800;' rotation='-90 0 0' position='2 0 -2' align='center'><a-entity>
-
-          <a-video src="#movie" width="2" height="1.125" position="-3.05 0 -2" rotation='0 0 0'></a-video>
-          <a-video src="#wish" width="2" height="1.125" position="-0.95 0 -2" rotation='0 0 0'></a-video>
-
+          <a-entity text='value: Semoga panjang umur + \nmurah rezeki + \nbahagia selalu! \n    - Mama & Fazreil; width: 5; height: 5; color: #ff8800;' rotation='-90 0 0' position='2 0 -2' align='center'><a-entity>
+          <a-video src="#birthday22022022" width="2" height="1.125" position="-3.05 0 -2" rotation='0 0 0'></a-video>
           <a-entity gltf-model="#cake" rotation='90 0 0' position='-1.5 -1 -2' scale="0.25 0.25 0.25"></a-entity>
       </a-marker>
     </a-scene>
