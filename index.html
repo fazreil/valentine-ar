@@ -10,36 +10,22 @@
       <a-assets>
         <a-asset-item id="rose" src="rose.gltf"></a-asset-item>
         <a-asset-item id="cake" src="cake.gltf"></a-asset-item>
-        <video id="movie" loop="true" autoplay src="MOVIE.webm" id="movieVid" webkit-playsinline defaultMuted playsinline></video>
+        <video id="wefie" loop="true" autoplay src="wefie.webm" id="wefieVid" webkit-playsinline defaultMuted playsinline></video>
         <script>
-          document.getElementById('movieVid').play();
-        </script>
-        <video id="wish" loop="true" autoplay src="wish.webm" id="wishVid" webkit-playsinline defaultMuted playsinline></video>
-        <script>
-          document.getElementById('wishVid').play();
+          document.getElementById('wefieVid').play();
         </script>
 
       </a-assets>
 <!--      <a-entity camera></a-entity> -->
       <a-marker preset="hiro">
           <script>
-            // var parameters = location.search.substring(1).split("&");
-            // var temp = parameters[0].split("=");
-            // l = unescape(temp[1]);
-            // temp = parameters[1].split("=");
-            // p = unescape(temp[1]);
-//            document.write("<a-entity gltf-model='#"+p+"' rotation='0 0 0' animation='property: rotation; to: 0 0 360; loop: true; dur: 10000' position='-1.5 0 -2'></a-entity>");
-//            document.write("<a-entity text='value: "+l+"; width: 10; height: 10; color: #ff8800;' rotation='-90 0 0' position='4 0 -2'></a-entity>");
+ 
           </script>
-          <!--
-          <a-entity gltf-model="#cake" rotation='0.0.0' animation='property: rotation; to: 0 0 360; loop: true; dur: 1000' position='-1.5 0 -2'></a-entity>
-          -->
-          <a-entity text='value: Happy Birthday Dear\nFarah Zahiah!; width: 5; height: 5; color: #ff8800;' rotation='-90 0 0' position='2 0 -2' align='center'><a-entity>
+       
+          <a-entity text='value: Love You Dear Farah Zahiah!; width: 5; height: 5; color: #ff8800;' rotation='-90 0 0' position='2 0 -2' align='center'><a-entity>
 
-          <a-video src="#movie" width="2" height="1.125" position="-3.05 0 -2" rotation='0 0 0'></a-video>
-          <a-video src="#wish" width="2" height="1.125" position="-0.95 0 -2" rotation='0 0 0'></a-video>
-
-          <a-entity gltf-model="#cake" rotation='90 0 0' position='-1.5 -1 -2' scale="0.25 0.25 0.25"></a-entity>
+          <a-video src="#wefie" width="2" height="1.125" position="-3.05 0 -2" rotation='0 0 0'></a-video>
+          <a-entity gltf-model="#rose" rotation='90 0 0' position='-1.5 -1 -2' scale="0.25 0.25 0.25"></a-entity>
       </a-marker>
     </a-scene>
   </body>
